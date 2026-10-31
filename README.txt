@@ -18,3 +18,8 @@ Image position fields (optional, per question): "ipos": above|below|left|right ;
 An option can be a plain string, "img:path", or {"t":"text","img":"img/x.jpg"}.
 Easiest way to create exams: use exam-editor.html (kept outside the site folder), then copy the exported data/ and img/ folders here.
 Solution image: optional "solimg":"img/x.jpg" next to "sol" (text).
+
+Sections (optional): add "sections":[{"title":"المرونة العقلية","n":10},{"title":"...","n":10}] to the exam object;
+the sum of n must equal the number of questions. The header shows the current section title; results show a score per section.
+Use exam-editor.html (checkbox "مقسّم إلى أقسام", or merge 4 project files with "كل ملف قسم").
+Results form has an extra field "secs" (score per section).

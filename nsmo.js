@@ -1,6 +1,6 @@
 (function(){
 const src=document.currentScript.src,BASE=src.slice(0,src.lastIndexOf('/')+1),K='mawhiba_student';
-const F={register:['name','phone','grade','gradeLabel','lang'],results:['name','phone','grade','gradeLabel','lang','level','exam','score','total']};
+const F={register:['name','phone','grade','gradeLabel','lang'],results:['name','phone','grade','gradeLabel','lang','level','exam','score','total','secs']};
 // grade -> level: 3-5 = 1, 6-8 = 2, 9-10 = 3
 const LV={3:1,4:1,5:1,6:2,7:2,8:2,9:3,10:3};
 const N={BASE,LV,
