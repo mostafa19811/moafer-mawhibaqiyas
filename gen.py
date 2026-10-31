@@ -62,9 +62,10 @@ def qs(lv,k,lg):
        3:[sq,lambda:geo([2,3,4],2,6),pct,frac,age,lin,lambda:rect(True),odd,ana,lambda:mul(12,25)]}[lv]
     return [f() if f.__name__ in('odd','ana','frac','pct','lin','age','sq') else f() for f in P]
 os.makedirs('data',exist_ok=True)
-LT={1:('3-4-5','المستوى الأول (الصفوف 3 - 4 - 5)','Level 1 (Grades 3-4-5)'),2:('6-7-8','المستوى الثاني (الصفوف 6 - 7 - 8)','Level 2 (Grades 6-7-8)'),3:('9-10','المستوى الثالث (الصفوف 9 - 10)','Level 3 (Grades 9-10)')}
+LT={1:('x','المستوى الأول (من الثالث إلى الخامس الابتدائي)','Level 1 (Primary 3 to 5)'),2:('x','المستوى الثاني (السادس الابتدائي إلى الثاني المتوسط)','Level 2 (Primary 6 to Intermediate 2)'),3:('x','المستوى الثالث (الثالث المتوسط والأول الثانوي)','Level 3 (Intermediate 3 and Secondary 1)')}
 for lv in(1,2,3):
   for lg in('ar','en'):
-    for k in range(1,6):
+    for k in range(1,4):
       E={'id':k,'title':'اختبار موهبة التدريبي' if lg=='ar' else 'Mawhiba Practice Exam','level':LT[lv][1 if lg=='ar' else 2],'minutes':30,'questions':qs(lv,k,lg)}
+      if os.path.exists(f'data/l{lv}-{lg}-{k}.js'): continue
       open(f'data/l{lv}-{lg}-{k}.js','w',encoding='utf-8').write('window.EXAM='+json.dumps(E,ensure_ascii=False,indent=1)+';')

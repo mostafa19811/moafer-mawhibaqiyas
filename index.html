@@ -1,30 +1,29 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1e1b4b"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;800&display=swap"><title>اختبارات موهبة التدريبية — التسجيل</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0f3d2e"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;800&display=swap"><title>اختبارات موهبة التدريبية — التسجيل</title><link rel="stylesheet" href="style.css"></head><body>
 <div class="bar"><div class="brand"><span class="badge">م</span>موهبة</div></div>
 <main class="wrap hero center"><div class="logo-wrap"><img src="logo.jpeg" alt="الشعار" width="1000" height="587"></div>
 <h1>سجّل بياناتك وابدأ الاختبار</h1><p>اختر صفك ولغة الاختبار وسننقلك مباشرة إلى الاختبارات المناسبة لك.</p>
-<form class="form" id="f" name="register" method="POST" data-netlify="true" novalidate style="text-align:right">
+<form class="form" id="f" name="register" method="POST" data-netlify="true" novalidate style="text-align:right"><input type="hidden" name="form-name" value="register"><input type="hidden" name="gradeLabel" id="gl">
 <div><label for="nm">الاسم</label><input id="nm" name="name" autocomplete="name" placeholder="الاسم الثلاثي"><div class="err" id="e-nm"></div></div>
 <div><label for="ph">رقم الجوال</label><input id="ph" name="phone" type="tel" inputmode="numeric" dir="ltr" placeholder="05XXXXXXXX" style="text-align:right"><div class="err" id="e-ph"></div></div>
-<div><label for="gr">الصف الدراسي</label><select id="gr" name="grade"><option value="">اختر الصف</option><option value="3">الصف الثالث</option><option value="4">الصف الرابع</option><option value="5">الصف الخامس</option><option value="6">الصف السادس</option><option value="7">الصف السابع</option><option value="8">الصف الثامن</option><option value="9">الصف التاسع</option><option value="10">الصف العاشر</option></select><div class="hint" id="h-gr"></div><div class="err" id="e-gr"></div></div>
+<div><label for="gr">الصف الدراسي</label><select id="gr" name="grade"><option value="">اختر الصف</option><option value="3">الصف الثالث الابتدائي</option><option value="4">الصف الرابع الابتدائي</option><option value="5">الصف الخامس الابتدائي</option><option value="6">الصف السادس الابتدائي</option><option value="7">الصف الأول المتوسط</option><option value="8">الصف الثاني المتوسط</option><option value="9">الصف الثالث المتوسط</option><option value="10">الصف الأول الثانوي</option></select><div class="hint" id="h-gr"></div><div class="err" id="e-gr"></div></div>
 <div><label for="lg">لغة الاختبار / Exam language</label><select id="lg" name="lang"><option value="">اختر اللغة</option><option value="ar">العربية</option><option value="en">English</option></select><div class="err" id="e-lg"></div></div>
-<div><label for="rg">المنطقة</label><select id="rg" name="region"><option value="">اختر المنطقة</option><option>الرياض</option><option>مكة المكرمة</option><option>المدينة المنورة</option><option>القصيم</option><option>المنطقة الشرقية</option><option>عسير</option><option>تبوك</option><option>حائل</option><option>الحدود الشمالية</option><option>جازان</option><option>نجران</option><option>الباحة</option><option>الجوف</option></select><div class="err" id="e-rg"></div></div>
 <button type="submit">ابدأ الاختبارات</button></form></main>
-<form name="results" method="POST" data-netlify="true" hidden><input name="name"><input name="phone"><input name="grade"><input name="region"><input name="lang"><input name="level"><input name="exam"><input name="score"><input name="total"></form>
+<form name="results" method="POST" data-netlify="true" hidden><input name="name"><input name="phone"><input name="grade"><input name="gradeLabel"><input name="lang"><input name="level"><input name="exam"><input name="score"><input name="total"></form>
 <footer>اختبارات تدريبية غير رسمية لأغراض التدريب.</footer>
 <script src="nsmo.js"></script><script>
 (function(){var $=function(i){return document.getElementById(i)};
-var s=NSMO.get();if(s){['nm:name','ph:phone','gr:grade','lg:lang','rg:region'].forEach(function(p){p=p.split(':');$(p[0]).value=s[p[1]]||''})}
+var s=NSMO.get();if(s){['nm:name','ph:phone','gr:grade','lg:lang'].forEach(function(p){p=p.split(':');$(p[0]).value=s[p[1]]||''})}
 var N=['','الأول','الثاني','الثالث'];
 function hint(){var g=$('gr').value;$('h-gr').textContent=g?'ستنتقل إلى المستوى '+N[NSMO.LV[g]]:''}$('gr').onchange=hint;hint();
 function digits(t){return t.replace(/[٠-٩]/g,function(d){return d.charCodeAt(0)-1632})}
 $('f').onsubmit=function(ev){ev.preventDefault();
-var nm=$('nm').value.trim().replace(/\s+/g,' '),ph=digits($('ph').value).replace(/[\s\-+]/g,''),gr=$('gr').value,lg=$('lg').value,rg=$('rg').value,ok=true;
+var nm=$('nm').value.trim().replace(/\s+/g,' '),ph=digits($('ph').value).replace(/[\s\-+]/g,''),gr=$('gr').value,lg=$('lg').value,ok=true;
 function chk(id,bad,msg){$('e-'+id).textContent=bad?msg:'';$(id).classList.toggle('bad',!!bad);if(bad)ok=false}
 chk('nm',nm.length<3,'اكتب اسمك');
 if(/^9665\d{8}$/.test(ph))ph='0'+ph.slice(3);else if(/^5\d{8}$/.test(ph))ph='0'+ph;
 chk('ph',!/^05\d{8}$/.test(ph),'اكتب رقم جوال سعودي صحيح مثل 0501234567');
-chk('gr',!gr,'اختر الصف الدراسي');chk('lg',!lg,'اختر لغة الاختبار');chk('rg',!rg,'اختر المنطقة');
+chk('gr',!gr,'اختر الصف الدراسي');chk('lg',!lg,'اختر لغة الاختبار');
 if(!ok)return;
-var st={name:nm,phone:ph,grade:+gr,region:rg,lang:lg};st.gradeLabel=$('gr').selectedOptions[0].text;NSMO.set(st);NSMO.send(Object.assign({type:'register'},st));
-location.href=NSMO.BASE+NSMO.path(st)}})();
+var st={name:nm,phone:ph,grade:+gr,lang:lg};st.gradeLabel=$('gr').selectedOptions[0].text;NSMO.set(st);var btn=$('f').querySelector('button[type=submit]');btn.disabled=true;btn.textContent='جارٍ التسجيل...';
+Promise.race([NSMO.send(Object.assign({type:'register'},st)),new Promise(function(r){setTimeout(r,2500)})]).then(function(){location.href=NSMO.BASE+NSMO.path(st)})}})();
 </script></body></html>

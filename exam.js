@@ -26,7 +26,7 @@ $('#nx').onclick=()=>{cur++;draw()};$('#pv').onclick=()=>{cur--;draw()};$('#fl')
 $('#sb').onclick=()=>{const un=ans.filter(a=>a===null).length;if(confirm(un?T.un(un):T.cf))finish()};
 function finish(){if(done)return;done=true;clearInterval(tm);let s=0;Q.forEach((q,i)=>{if(ans[i]===q.ans)s++});
  if(window.NSMO)NSMO.send(Object.assign({type:'result',level:E.level,exam:E.id,score:s,total:N},NSMO.get()||{}));
- $('#ex').outerHTML=`<div class="wrap"><div class="panel res"><h2>${T.rs}</h2><div class="score">${s} / ${N}</div><p>${Math.round(s/N*100)}%</p><div class="rv">${Q.map((q,i)=>`<div class="${ans[i]===q.ans?'y':'n'}"><b>${i+1}.</b> ${qbody(q)}<p>${T.ya}: ${ans[i]===null?'—':L[ans[i]]} — ${T.ca}: ${L[q.ans]}</p>${q.sol?`<p>${T.sol}: ${q.sol}</p>`:''}</div>`).join('')}</div><p><a class="btn pri" style="display:inline-block;margin:14px 6px" href="">${T.re}</a><a class="btn" style="display:inline-block" href="../">${T.all}</a></p></div></div>`}
+ $('#ex').outerHTML=`<div class="wrap"><div class="panel res"><h2>${T.rs}</h2><div class="score">${s} / ${N}</div><p>${Math.round(s/N*100)}%</p><div class="rv">${Q.map((q,i)=>`<div class="${ans[i]===q.ans?'y':'n'}"><b>${i+1}.</b> ${qbody(q)}<p>${T.ya}: ${ans[i]===null?'—':L[ans[i]]} — ${T.ca}: ${L[q.ans]}</p>${q.sol||q.solimg?`<p>${T.sol}: ${q.sol||''}</p>${q.solimg?img(q.solimg,260):''}`:''}</div>`).join('')}</div><p><a class="btn pri" style="display:inline-block;margin:14px 6px" href="">${T.re}</a><a class="btn" style="display:inline-block" href="../">${T.all}</a></p></div></div>`}
 function tick(){$('#tm').textContent=mmss(left);if(left--<=0)finish()}
 tick();tm=setInterval(tick,1000);draw();
 })();

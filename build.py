@@ -1,8 +1,8 @@
 import os,json
-H='<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1e1b4b"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;800&display=swap">'
+H='<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0f3d2e"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;800&display=swap">'
 FT={'ar':'اختبارات تدريبية غير رسمية لأغراض التدريب.','en':'Unofficial practice exams for training purposes.'}
-LV={1:('3-4-5',{'ar':'المستوى الأول (الصفوف 3 - 4 - 5)','en':'Level 1 (Grades 3-4-5)'}),2:('6-7-8',{'ar':'المستوى الثاني (الصفوف 6 - 7 - 8)','en':'Level 2 (Grades 6-7-8)'}),3:('9-10',{'ar':'المستوى الثالث (الصفوف 9 - 10)','en':'Level 3 (Grades 9-10)'})}
-NEXAMS=5
+LV={1:('x',{'ar':'المستوى الأول (من الثالث إلى الخامس الابتدائي)','en':'Level 1 (Primary 3 to 5)'}),2:('x',{'ar':'المستوى الثاني (السادس الابتدائي إلى الثاني المتوسط)','en':'Level 2 (Primary 6 to Intermediate 2)'}),3:('x',{'ar':'المستوى الثالث (الثالث المتوسط والأول الثانوي)','en':'Level 3 (Intermediate 3 and Secondary 1)'})}
+NEXAMS=3
 def w(p,t):
     os.makedirs(os.path.dirname(p) or '.',exist_ok=True);open(p,'w',encoding='utf-8').write(t)
 for lv in LV:
