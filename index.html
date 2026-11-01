@@ -1,5 +1,5 @@
 <!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0f3d2e"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;800&display=swap"><title>اختبارات موهبة التدريبية — التسجيل</title><link rel="stylesheet" href="style.css"></head><body>
-<div class="bar"><div class="brand"><span class="badge">م</span>موهبة</div></div>
+<div class="bar slim"><div class="proj">المشروع الوطني للتعرف على الموهوبين (مقياس موهبة)</div></div>
 <main class="wrap hero center"><div class="logo-wrap"><img src="logo.jpeg" alt="الشعار" width="1000" height="587"></div>
 <h1>سجّل بياناتك وابدأ الاختبار</h1><p>اختر صفك ولغة الاختبار وسننقلك مباشرة إلى الاختبارات المناسبة لك.</p>
 <form class="form" id="f" name="register" method="POST" data-netlify="true" novalidate style="text-align:right"><input type="hidden" name="form-name" value="register"><input type="hidden" name="gradeLabel" id="gl">
@@ -7,9 +7,12 @@
 <div><label for="ph">رقم الجوال</label><input id="ph" name="phone" type="tel" inputmode="numeric" dir="ltr" placeholder="05XXXXXXXX" style="text-align:right"><div class="err" id="e-ph"></div></div>
 <div><label for="gr">الصف الدراسي</label><select id="gr" name="grade"><option value="">اختر الصف</option><option value="3">الصف الثالث الابتدائي</option><option value="4">الصف الرابع الابتدائي</option><option value="5">الصف الخامس الابتدائي</option><option value="6">الصف السادس الابتدائي</option><option value="7">الصف الأول المتوسط</option><option value="8">الصف الثاني المتوسط</option><option value="9">الصف الثالث المتوسط</option><option value="10">الصف الأول الثانوي</option></select><div class="hint" id="h-gr"></div><div class="err" id="e-gr"></div></div>
 <div><label for="lg">لغة الاختبار / Exam language</label><select id="lg" name="lang"><option value="">اختر اللغة</option><option value="ar">العربية</option><option value="en">English</option></select><div class="err" id="e-lg"></div></div>
-<button type="submit">ابدأ الاختبارات</button></form></main>
+<button type="submit">ابدأ الاختبارات</button></form><section class="join" aria-label="مجتمع أكاديمية معافر"><h2>انضم لمجتمع أكاديمية معافر</h2><p>تابع جديد النماذج والإعلانات عبر قنواتنا</p>
+<div class="jrow"><a class="jb tg" href="https://t.me/moafercourses" target="_blank" rel="noopener">انضم لجروب أكاديمية معافر على تيليجرام</a><a class="jb wa" href="https://chat.whatsapp.com/IexTkv3TJyKCydq7MLojh6" target="_blank" rel="noopener">انضم لجروب أكاديمية معافر على واتساب</a></div>
+<div class="qr"><img src="tg-qr.png" alt="باركود الانضمام لجروب أكاديمية معافر على تيليجرام" width="378" height="415" loading="lazy"><small>أو امسح الباركود للانضمام على تيليجرام</small></div></section>
+</main>
 <form name="results" method="POST" data-netlify="true" hidden><input name="name"><input name="phone"><input name="grade"><input name="gradeLabel"><input name="lang"><input name="level"><input name="exam"><input name="score"><input name="total"><input name="secs"></form>
-<footer>اختبارات تدريبية غير رسمية لأغراض التدريب.</footer>
+<footer>نماذج تدريبية غير رسمية من أكاديمية معافر</footer>
 <script src="nsmo.js"></script><script>
 (function(){var $=function(i){return document.getElementById(i)};
 var s=NSMO.get();if(s){['nm:name','ph:phone','gr:grade','lg:lang'].forEach(function(p){p=p.split(':');$(p[0]).value=s[p[1]]||''})}

@@ -23,3 +23,6 @@ Sections (optional): add "sections":[{"title":"المرونة العقلية","n
 the sum of n must equal the number of questions. The header shows the current section title; results show a score per section.
 Use exam-editor.html (checkbox "مقسّم إلى أقسام", or merge 4 project files with "كل ملف قسم").
 Results form has an extra field "secs" (score per section).
+
+Saving student data without Netlify (GitHub Pages / Cloudflare Pages): create a Google Sheet, paste google-apps-script.gs into Apps Script,
+deploy as Web app (Anyone), then put the /exec URL in SHEET_URL at the top of nsmo.js.

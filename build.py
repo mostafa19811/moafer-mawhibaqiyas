@@ -1,6 +1,7 @@
 import os,json
 H='<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0f3d2e"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;800&display=swap">'
-FT={'ar':'اختبارات تدريبية غير رسمية لأغراض التدريب.','en':'Unofficial practice exams for training purposes.'}
+FT={'ar':'نماذج تدريبية غير رسمية من أكاديمية معافر','en':'Unofficial practice exams from Moafer Academy'}
+PJ={'ar':'المشروع الوطني للتعرف على الموهوبين (مقياس موهبة)','en':'National Project for Identifying Gifted Students (Mawhiba Scale)'}
 LV={1:('x',{'ar':'المستوى الأول (من الثالث إلى الخامس الابتدائي)','en':'Level 1 (Primary 3 to 5)'}),2:('x',{'ar':'المستوى الثاني (السادس الابتدائي إلى الثاني المتوسط)','en':'Level 2 (Primary 6 to Intermediate 2)'}),3:('x',{'ar':'المستوى الثالث (الثالث المتوسط والأول الثانوي)','en':'Level 3 (Intermediate 3 and Secondary 1)'})}
 NEXAMS=3
 def w(p,t):
@@ -11,6 +12,6 @@ for lv in LV:
     items=''.join(f'<li><a href="{k}/"><span class="num">{k}</span><div><b>{"الاختبار التدريبي" if lg=="ar" else "Practice exam"} {k}</b></div></a></li>' for k in range(1,NEXAMS+1))
     back='← تعديل بياناتي' if lg=='ar' else '← Edit my details'
     intro='ستظهر نتيجتك فور التسليم مع الإجابات الصحيحة.' if lg=='ar' else 'Your result appears right after you submit, with the correct answers.'
-    w(f'level{lv}/{lg}/index.html',f'<!doctype html><html lang="{lg}" dir="{d}"><head>{H}<title>{t}</title><link rel="stylesheet" href="../../style.css"></head><body><div class="bar"><a class="brand" href="../../"><span class="badge">م</span>{"موهبة" if lg=="ar" else "Mawhiba"}</a></div><main class="wrap hero"><h1>{t}</h1><p>{intro}</p><p class="hi" id="hi"></p><ul class="list">{items}</ul><p><a href="../../">{back}</a></p></main><footer>{FT[lg]}</footer><script src="../../nsmo.js"></script><script>NSMO.guard();var s=NSMO.get();if(s)document.getElementById("hi").textContent=s.name+" — "+(s.gradeLabel||s.grade);</script></body></html>')
+    w(f'level{lv}/{lg}/index.html',f'<!doctype html><html lang="{lg}" dir="{d}"><head>{H}<title>{t}</title><link rel="stylesheet" href="../../style.css"></head><body><div class="bar slim"><a class="proj" href="../../">{PJ[lg]}</a></div><main class="wrap hero"><h1>{t}</h1><p>{intro}</p><p class="hi" id="hi"></p><ul class="list">{items}</ul><p><a href="../../">{back}</a></p></main><footer>{FT[lg]}</footer><script src="../../nsmo.js"></script><script>NSMO.guard();var s=NSMO.get();if(s)document.getElementById("hi").textContent=s.name+" — "+(s.gradeLabel||s.grade);</script></body></html>')
     for k in range(1,NEXAMS+1):
       w(f'level{lv}/{lg}/{k}/index.html',f'<!doctype html><html lang="{lg}" dir="{d}"><head>{H}<meta name="robots" content="noindex"><title>{t} #{k}</title><link rel="stylesheet" href="../../../style.css"></head><body><div id="app"></div><script src="../../../data/l{lv}-{lg}-{k}.js"></script><script src="../../../nsmo.js"></script><script src="../../../exam.js"></script></body></html>')
