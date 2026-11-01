@@ -2,7 +2,7 @@
 // ===== إعداد حفظ البيانات =====
 // ضع هنا رابط Google Apps Script (ينتهي بـ /exec) ليصل التسجيل والنتائج إلى جدول Google Sheets.
 // إذا تُرك فارغًا يُرسل الموقع البيانات إلى Netlify Forms (يعمل على Netlify فقط).
-const SHEET_URL='';
+const SHEET_URL='https://script.google.com/macros/s/AKfycbzHiDRRla0YpQ_9OylkWUlV5QlwmQRz6iyugN-_nPaXpP0MUzEoYRJWhoX60lsNvF4/exec';
 const src=document.currentScript.src,BASE=src.slice(0,src.lastIndexOf('/')+1),K='mawhiba_student';
 const F={register:['name','phone','grade','gradeLabel','lang'],results:['name','phone','grade','gradeLabel','lang','level','exam','score','total','secs']};
 // grade -> level: 3-5 = 1, 6-8 = 2, 9-10 = 3
