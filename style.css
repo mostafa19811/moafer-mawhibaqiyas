@@ -69,3 +69,6 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
 
 [hidden]{display:none!important}
 .gate{margin:0 0 24px}.gate .lock{font-size:34px;text-align:center}
+.bright{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.secb{background:rgba(255,255,255,.12);border-radius:12px;padding:6px 18px;text-align:center;max-width:320px}.secb small{display:block;font-size:13px;opacity:.8}.secb b{display:block;font-size:18px;line-height:1.35}
+@media(max-width:900px){.bar{flex-wrap:wrap;gap:8px}.bright{width:100%;justify-content:space-between}.secb{flex:1}.secb b{font-size:15px}.timer b{font-size:22px}}
