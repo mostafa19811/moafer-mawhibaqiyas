@@ -66,3 +66,6 @@ button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
 .join h2{font-size:18px;margin:0 0 6px}.join p{margin:0 0 14px;color:var(--mut);font-size:14px}
 .jrow{display:flex;flex-direction:column;gap:10px}.jb{display:block;padding:12px 14px;border-radius:12px;color:#fff;font-weight:700;text-decoration:none;font-size:15px}
 .jb.tg{background:#1b86bd}.jb.wa{background:#168a45}.qr{margin-top:16px}.qr img{width:150px;height:auto;background:#fff;border-radius:12px;padding:8px}.qr small{display:block;color:var(--mut);margin-top:6px;font-size:13px}
+
+[hidden]{display:none!important}
+.gate{margin:0 0 24px}.gate .lock{font-size:34px;text-align:center}

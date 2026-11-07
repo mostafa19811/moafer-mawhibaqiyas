@@ -1,5 +1,5 @@
 (function(){
-if(window.NSMO)NSMO.guard();
+if(window.NSMO&&NSMO.guard(1)===false)return;
 const BASE=document.currentScript.src.replace(/exam\.js.*$/,'');
 const E=window.EXAM,$=s=>document.querySelector(s),AR=(document.documentElement.lang==='ar');
 const T=AR?{ft:'نماذج تدريبية غير رسمية من أكاديمية معافر',sc:'القسم',ns:'القسم التالي',ss:'درجات الأقسام',tl:'الوقت المتبقي',q:'السؤال',of:'من',fl:'علّم للمراجعة',nx:'التالي',pv:'السابق',qs:'الأسئلة',a:'مُجاب',m:'معلّم',u:'غير مُجاب',sb:'تسليم الاختبار',un:n=>`لديك ${n} سؤالًا بلا إجابة. هل تريد التسليم؟`,cf:'هل تريد تسليم الاختبار؟',rs:'نتيجتك',ya:'إجابتك',ca:'الصحيحة',sol:'الحل',re:'إعادة الاختبار',all:'كل الاختبارات',wip:'هذا الاختبار قيد الإعداد',bk:'العودة إلى قائمة الاختبارات'}
