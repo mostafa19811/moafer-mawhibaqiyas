@@ -12,17 +12,8 @@ window.EXAM={"id":3,"title":"...","level":"...","minutes":60,"questions":[
 Only add questions you own or are licensed to publish.
 gen.py created the original practice questions; build.py creates the pages. Re-running gen.py overwrites data/*.js.
 Deploy: drag the folder to Netlify (registrations and results are collected by Netlify Forms).
-Grades: Primary 3-5 -> Level 1; Primary 6, Intermediate 1-2 -> Level 2; Intermediate 3, Secondary 1 -> Level 3. Each level has 3 exams per language.
+Grades: 3-5 -> Level 1, 6-8 -> Level 2, 9-10 -> Level 3.
 
 Image position fields (optional, per question): "ipos": above|below|left|right ; "ialign": start|center|end (for above/below).
 An option can be a plain string, "img:path", or {"t":"text","img":"img/x.jpg"}.
 Easiest way to create exams: use exam-editor.html (kept outside the site folder), then copy the exported data/ and img/ folders here.
-Solution image: optional "solimg":"img/x.jpg" next to "sol" (text).
-
-Sections (optional): add "sections":[{"title":"المرونة العقلية","n":10},{"title":"...","n":10}] to the exam object;
-the sum of n must equal the number of questions. The header shows the current section title; results show a score per section.
-Use exam-editor.html (checkbox "مقسّم إلى أقسام", or merge 4 project files with "كل ملف قسم").
-Results form has an extra field "secs" (score per section).
-
-Saving student data without Netlify (GitHub Pages / Cloudflare Pages): create a Google Sheet, paste google-apps-script.gs into Apps Script,
-deploy as Web app (Anyone), then put the /exec URL in SHEET_URL at the top of nsmo.js.
