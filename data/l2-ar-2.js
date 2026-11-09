@@ -2,117 +2,780 @@ window.EXAM={
  "id": 2,
  "title": "اختبار موهبة التدريبي",
  "level": "المستوى الثاني (السادس الابتدائي إلى الثاني المتوسط)",
- "minutes": 30,
+ "minutes": 90,
  "questions": [
   {
-   "q": "ما العدد التالي: 16 ، 23 ، 30 ، 37 ، ؟",
+   "q": "",
+   "img": "img/l2-ar-2-q1.jpg",
+   "ipos": "below",
+   "ialign": "center",
    "opts": [
-    "44",
-    "51",
-    "45",
-    "58"
+    "ا",
+    "ب",
+    "ج",
+    "د"
    ],
-   "ans": 0,
-   "sol": "الفرق ثابت = 7"
+   "ans": 3
   },
   {
-   "q": "ما العدد التالي: 3 ، 6 ، 12 ، 24 ، ؟",
+   "q": "",
+   "img": "img/l2-ar-2-q2.jpg",
+   "ipos": "below",
+   "ialign": "center",
    "opts": [
-    "50",
-    "48",
-    "51",
-    "58"
+    "ا",
+    "ب",
+    "ج",
+    "د"
    ],
-   "ans": 1,
-   "sol": "كل عدد = السابق × 2"
+   "ans": 0
   },
   {
-   "q": "ما ناتج 12 × 6؟",
+   "q": "",
+   "img": "img/l2-ar-2-q3.jpg",
+   "ipos": "below",
+   "ialign": "center",
    "opts": [
-    "84",
-    "66",
-    "78",
-    "72"
+    "ا",
+    "ب",
+    "ج",
+    "د"
    ],
-   "ans": 3,
-   "sol": "12 × 6 = 72"
+   "ans": 3
   },
   {
-   "q": "ما قيمة 1/2 من 8؟",
+   "q": "",
+   "img": "img/l2-ar-2-q4.jpg",
+   "ipos": "below",
+   "ialign": "center",
    "opts": [
-    "8",
-    "3",
-    "4",
-    "5"
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 0
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q5.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 2
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q6.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 0
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q7.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 1
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q8.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "أ",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 1
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q9.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 0
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q10.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 1
+  },
+  {
+   "q": "وٌلد الصفدي في :",
+   "img": "img/l2-ar-2-q11.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q11-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q11-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q11-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q11-d.jpg"
+    }
+   ],
+   "ans": 3
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q12.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q12-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q12-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q12-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q12-d.jpg"
+    }
+   ],
+   "ans": 1
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q13.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q13-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q13-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q13-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q13-d.jpg"
+    }
+   ],
+   "ans": 2
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q14.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q14-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q14-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q14-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q14-d.jpg"
+    }
+   ],
+   "ans": 1
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q15.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q15-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q15-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q15-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q15-d.jpg"
+    }
+   ],
+   "ans": 2
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q16.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q16-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q16-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q16-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q16-d.jpg"
+    }
+   ],
+   "ans": 3
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q17.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q17-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q17-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q17-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q17-d.jpg"
+    }
+   ],
+   "ans": 1
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q18.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q18-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q18-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q18-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q18-d.jpg"
+    }
    ],
    "ans": 2,
-   "sol": "8 ÷ 2 × 1 = 4"
+   "solimg": "img/l2-ar-2-q18-sol.jpg"
   },
   {
-   "q": "ما قيمة ؟ إذا كان ؟ + 11 = 98",
+   "q": "",
+   "img": "img/l2-ar-2-q19.jpg",
+   "ipos": "below",
+   "ialign": "center",
    "opts": [
-    "77",
-    "87",
-    "86",
-    "88"
-   ],
-   "ans": 1,
-   "sol": "98 − 11 = 87"
-  },
-  {
-   "q": "مستطيل طوله 14 سم وعرضه 7 سم. ما مساحته بالسنتيمتر المربع؟",
-   "opts": [
-    "112",
-    "98",
-    "84",
-    "91"
-   ],
-   "ans": 1,
-   "sol": "14 × 7 = 98"
-  },
-  {
-   "q": "أيّ الكلمات التالية تختلف عن البقية؟",
-   "opts": [
-    "غزال",
-    "جزر",
-    "خس",
-    "بطاطس"
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q19-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q19-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q19-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q19-d.jpg"
+    }
    ],
    "ans": 0,
-   "sol": "الكلمة المختلفة من تصنيف آخر"
+   "solimg": "img/l2-ar-2-q19-sol.jpg"
   },
   {
-   "q": "أيّ الكلمات التالية تختلف عن البقية؟",
+   "q": "",
+   "img": "img/l2-ar-2-q20.jpg",
+   "ipos": "below",
+   "ialign": "center",
    "opts": [
-    "تفاح",
-    "فراولة",
-    "برتقال",
-    "جزر"
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q20-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q20-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q20-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q20-d.jpg"
+    }
    ],
-   "ans": 3,
-   "sol": "الكلمة المختلفة من تصنيف آخر"
+   "ans": 2,
+   "solimg": "img/l2-ar-2-q20-sol.jpg"
   },
   {
-   "q": "مفتاح : يفتح ، ملعقة : ؟",
+   "q": "",
+   "img": "img/l2-ar-2-q21.jpg",
+   "ipos": "below",
+   "ialign": "center",
    "opts": [
-    "تخيط",
-    "ترى",
-    "تسمع",
-    "تؤكل بها"
+    "ا",
+    "ب",
+    "ج",
+    "د"
    ],
-   "ans": 3,
-   "sol": "لكل أداة وظيفتها"
+   "ans": 0
   },
   {
-   "q": "مع سالم 607 ريالًا، أنفق منها 37. كم بقي معه؟",
+   "q": "",
+   "img": "img/l2-ar-2-q22.jpg",
+   "ipos": "below",
+   "ialign": "center",
    "opts": [
-    "570",
-    "572",
-    "560",
-    "569"
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 2
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q23.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 2
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q24.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 3
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q25.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 1
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q26.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 1
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q27.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "أ",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 0
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q28.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 2
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q29.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ح",
+    "د"
+   ],
+   "ans": 1
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q30.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    "ا",
+    "ب",
+    "ج",
+    "د"
+   ],
+   "ans": 3
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q31.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q31-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q31-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q31-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q31-d.jpg"
+    }
    ],
    "ans": 0,
-   "sol": "607 − 37 = 570"
+   "solimg": "img/l2-ar-2-q31-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q32.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q32-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q32-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q32-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q32-d.jpg"
+    }
+   ],
+   "ans": 3,
+   "solimg": "img/l2-ar-2-q32-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q33.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q33-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q33-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q33-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q33-d.jpg"
+    }
+   ],
+   "ans": 2,
+   "solimg": "img/l2-ar-2-q33-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q34.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q34-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q34-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q34-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q34-d.jpg"
+    }
+   ],
+   "ans": 1,
+   "solimg": "img/l2-ar-2-q34-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q35.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q35-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q35-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q35-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q35-d.jpg"
+    }
+   ],
+   "ans": 1,
+   "solimg": "img/l2-ar-2-q35-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q36.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q36-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q36-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q36-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q36-d.jpg"
+    }
+   ],
+   "ans": 0,
+   "solimg": "img/l2-ar-2-q36-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q37.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q37-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q37-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q37-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q37-d.jpg"
+    }
+   ],
+   "ans": 1,
+   "solimg": "img/l2-ar-2-q37-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q38.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q38-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q38-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q38-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q38-d.jpg"
+    }
+   ],
+   "ans": 1,
+   "solimg": "img/l2-ar-2-q38-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q39.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q39-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q39-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q39-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q39-d.jpg"
+    }
+   ],
+   "ans": 2,
+   "solimg": "img/l2-ar-2-q39-sol.jpg"
+  },
+  {
+   "q": "",
+   "img": "img/l2-ar-2-q40.jpg",
+   "ipos": "below",
+   "ialign": "center",
+   "opts": [
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q40-a.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q40-b.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q40-c.jpg"
+    },
+    {
+     "t": "",
+     "img": "img/l2-ar-2-q40-d.jpg"
+    }
+   ],
+   "ans": 1,
+   "solimg": "img/l2-ar-2-q40-sol.jpg"
   }
  ]
 };
